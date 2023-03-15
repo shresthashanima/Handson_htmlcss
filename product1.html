@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Blog</title>
+    <link rel="stylesheet" href="productstyle.css">
+  </head>
+  <body>
+    <div class="head-container container">
+        <img src="cubelogo.png" alt="Logo" class="my-logo">
+        <h2 class="blog-heading">Product Blog</h2>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a onclick="alertFunction()">Products</a></li>
+            <li><a onclick="alertFunction()">Blogs</a></li>
+            <li><a onclick="alertFunction()">About Us</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div class="blog-container container">
+        <img src="https://picsum.photos/1000/500/" alt="Profile Image" class="main-img">
+        <div class="flex-container">
+            <div class="flex-child content">
+                <!-- <h1>Product Blog Details</h1> -->
+                <h2 id="title"></h2>
+                <p class="post-date">March 15, 2023</p>
+                <p class="post-author"><b>By Javial Slam</b></p>
+                <p class="post-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros quis enim tincidunt consectetur.
+                    Nam ultricies est ac turpis maximus, sed consequat magna pretium. Nullam in nisl ac ante porttitor
+                    iaculis ac eget nulla. Nunc id ipsum id sapien dictum sagittis. Suspendisse in semper ipsum.
+                    Sed rhoncus neque nec eros efficitur, quis tincidunt nisi dictum. Suspendisse vel quam in tortor
+                    consectetur tincidunt. Nullam semper sollicitudin est. Vestibulum rutrum ac nibh at auctor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros quis enim tincidunt consectetur.
+                    Nam ultricies est ac turpis maximus, sed consequat magna pretium. Nullam in nisl ac ante porttitor iaculis ac eget nulla. 
+                    Nunc id ipsum id sapien dictum sagittis. Suspendisse in semper ipsum. Sed rhoncus neque nec eros efficitur, quis tincidunt nisi dictum. 
+                    Suspendisse vel quam in tortor consectetur tincidunt. Nullam semper sollicitudin est. Vestibulum rutrum ac nibh at auctor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros quis enim tincidunt consectetur. Nam ultricies est ac turpis maximus, sed consequat magna pretium. 
+                    Nullam in nisl ac ante porttitor iaculis ac eget nulla. Nunc id ipsum id sapien dictum sagittis. 
+                    Suspendisse in semper ipsum. Sed rhoncus neque nec eros efficitur, quis tincidunt nisi dictum. Suspendisse vel quam in tortor consectetur tincidunt. Nullam semper sollicitudin est. Vestibulum rutrum ac nibh at auctor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros quis enim tincidunt consectetur. Nam ultricies est ac turpis maximus, sed consequat magna pretium. Nullam in nisl ac ante porttitor iaculis ac eget nulla. Nunc id ipsum id sapien dictum sagittis. Suspendisse in semper ipsum. Sed rhoncus neque nec eros efficitur, quis tincidunt nisi dictum. Suspendisse vel quam in tortor consectetur tincidunt. Nullam semper sollicitudin est. Vestibulum rutrum ac nibh at auctor.
+                </p>
+            </div>
+            <div class="flex-child related">
+                <h2>Related Posts</h2>
+                <ul class="related-posts">
+                    <li>
+                        <a href="/featured.html">
+                            <img src="https://picsum.photos/400/100" alt="Related Post Image" class="related-img">
+                            <h3>New Product Posts</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/featured.html">
+                            <img src="https://picsum.photos/400/100" alt="Related Post Image" class="related-img">
+                            <h3>Latest Product Posts</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/featured.html">
+                            <img src="https://picsum.photos/400/100" alt="Related Post Image" class="related-img">
+                            <h3>Recent Product News</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+
+    <script>
+        function alertFunction(){
+            alert("Hello! Coming Soon!!");
+        }
+    
+		const title = localStorage.getItem("title");
+        document.getElementById("title").innerText = title;
+    </script>
+
+   </script>
+</body>
+</html>
+    

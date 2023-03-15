@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Blog</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="head-container container">
+        <a href="/index.html">
+            <img src="cubelogo.png" alt="Logo" class="my-logo">
+        </a>
+        <h2 class="blog-heading">Product Blog</h2>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a onclick="alertFunction()">Products</a></li>
+            <li><a onclick="alertFunction()">Blogs</a></li>
+            <li><a onclick="alertFunction()">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div class="article-section container">
+            <h1>Welcome to our Product Blog</h1>
+            <img src="tech.jpeg" alt="Banner" class="my-banner">
+            <hr><h3>Find the latest news and reviews on your favorite products.</h3></hr>
+            <h2><a href="/featured.html" class="button">Explore Products</a></h2>
+        </div>
+    
+        <div class="products-section-container container">
+            <article class="product-article">
+                <div class="product-image-container">
+                <img src="https://picsum.photos/300/300" alt="Product Image" class="product-img">
+                </div>
+                <div class="product-details-container">
+                <h2 id="product-title1">Product Management and Designing</h2>
+                <p class="product-date">June 1, 2023</p>
+                <b><p class="product-author">By Javial Slam</p></b>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button onclick="sendData1()" class="read-more-button">Read More</button>
+                </div>
+            </article>
+            
+            <article class="product-article">
+                <div class="product-image-container">
+                <img src="https://picsum.photos/300/300" alt="Product Image" class="product-img">
+                </div>
+                <div class="product-details-container">
+                <h2 id="product-title2">Popular Products in 2023</h2>
+                <p class="product-date">May 27, 2023</p>
+                <b><p class="product-author">By Janey Smith</p></b>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <button onclick="sendData2()" class="read-more-button">Read More</button>
+                </div>
+            </article>
+            
+            <article class="product-article">
+                <div class="product-image-container">
+                <img src="https://picsum.photos/300/300" alt="Product Image" class="product-img">
+                </div>
+                <div class="product-details-container">
+                <h2 id="product-title3">Most Used Softwares</h2>
+                <p class="product-date">May 15, 2023</p>
+                <b><p class="product-author">By Mike Johnson</p></b>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button onclick="sendData3()" class="read-more-button">Read More</button>
+                </div>
+            </article>
+            
+            <article class="product-article">
+                <div class="product-image-container">
+                <img src="https://picsum.photos/300/300" alt="Product Image" class="product-img">
+                </div>
+                <div class="product-details-container">
+                <h2 id="product-title4">Latest Products trends</h2>
+                <p class="product-date">May 3, 2023</p>
+                <b><p class="product-author">By Sarah Wilson</p></b>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <button onclick="sendData4()" class="read-more-button">Read More</button>
+                </div>
+            </article>
+            
+            <article class="product-article">
+                <div class="product-image-container">
+                <img src="https://picsum.photos/300/300" alt="Product Image" class="product-img">
+                </div>
+                <div class="product-details-container">
+                <h2 id="product-title5">Most Popular Programming language</h2>
+                <p class="product-date">April 25, 2023</p>
+                <b><p class="product-author">By David Lee</p></b>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <button onclick="sendData5()" class="read-more-button">Read More</button>
+                </div>
+            </article>
+        </div>
+
+        <div class="featured-section container">
+            <hr><h2>New Featured Posts</h2></hr>
+            <div class="featured-list">
+                <div class="article">
+                    <a href="/featured.html">
+                        <img class="article-image" src="https://picsum.photos/400/300" alt="Product Image">
+                        <h2 class="article-title">New cool features in Instagram</h2>
+                    </a>
+                    <p class="article-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ipsum sed augue sodales auctor. Donec quis justo ut lacus commodo iaculis. Donec sed ligula vitae augue pellentesque commodo. Sed eu nulla lacinia, faucibus dolor id, congue sapien. Morbi laoreet sem eu augue blandit commodo. Mauris lobortis nulla enim, sed blandit metus venenatis sit amet.</p>
+                </div>
+                <div class="article">
+                    <a href="/featured.html">
+                        <img class="article-image" src="https://picsum.photos/400/300" alt="Product Image">
+                        <h2 class="article-title">How Remote Work Drastically Improved my Design Skills</h2>
+                    </a>
+                    <p class="article-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ipsum sed augue sodales auctor. Donec quis justo ut lacus commodo iaculis. Donec sed ligula vitae augue pellentesque commodo. Sed eu nulla lacinia, faucibus dolor id, congue sapien. Morbi laoreet sem eu augue blandit commodo. Mauris lobortis nulla enim, sed blandit metus venenatis sit amet.</p>
+                </div>
+
+                <div class="article">
+                    <a href="/featured.html">
+                        <img class="article-image" src="https://picsum.photos/400/300" alt="Product Image">
+                        <h2 class="article-title">Latest frameworks in Python in 2023</h2>
+                    </a>
+                    <p class="article-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ipsum sed augue sodales auctor. Donec quis justo ut lacus commodo iaculis. Donec sed ligula vitae augue pellentesque commodo. Sed eu nulla lacinia, faucibus dolor id, congue sapien. Morbi laoreet sem eu augue blandit commodo. Mauris lobortis nulla enim, sed blandit metus venenatis sit amet.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script>
+            function alertFunction(){
+                alert("Hello! Coming Soon!!");
+            }
+
+            function sendData1() {
+                const title = document.getElementById("product-title1").innerText;
+                localStorage.setItem("title", title);
+                window.location.href = "product1.html";
+            }
+            function sendData2() {
+                const title = document.getElementById("product-title2").innerText;
+                localStorage.setItem("title", title);
+                window.location.href = "product1.html";
+            }
+            function sendData3() {
+                const title = document.getElementById("product-title3").innerText;
+                localStorage.setItem("title", title);
+                window.location.href = "product1.html";
+            }
+            function sendData4() {
+                const title = document.getElementById("product-title4").innerText;
+                localStorage.setItem("title", title);
+                window.location.href = "product1.html";
+            }
+            function sendData5() {
+                const title = document.getElementById("product-title5").innerText;
+                localStorage.setItem("title", title);
+                window.location.href = "product1.html";
+            }
+       </script>
+  </body>
+</html>
+
+
+
